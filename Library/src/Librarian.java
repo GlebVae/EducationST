@@ -1,4 +1,5 @@
 public class Librarian extends People {
+        private String exp = "Начальник";
 
     public static void main (String[] args){
         Librarian one = new Librarian();
