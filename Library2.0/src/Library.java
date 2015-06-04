@@ -8,7 +8,7 @@ public class Library {
     public void userCard(int idcard, String namecard, String surnamecard, int agecard ){
         UserCard[] usercard;
         usercard = new UserCard[1];
-        usercard [1] = new UserCard(1,"Артём","Лопатин",25);
+        usercard [0] = new UserCard(1,"Артём","Лопатин",25);
     }
 
 
