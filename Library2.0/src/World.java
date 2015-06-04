@@ -7,6 +7,7 @@ public class World {
 
 
         Librarin librarin = new Librarin("Зинаида", "Петровна", 53);
+        librarin.getaBook();
 
         Library library = new Library();
 
