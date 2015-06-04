@@ -6,7 +6,7 @@ public class Book {
     private String BookAuthor;
 
     public void setID(int id){
-        if (this.ID > 0){
+        if (id > 0){
             this.ID = id;
         }else {System.out.println("ID не может быть меньше нуля");}
         }
