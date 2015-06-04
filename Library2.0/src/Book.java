@@ -5,22 +5,24 @@ public class Book {
     private String BookeName;
     private String BookAuthor;
 
-    public void setID(int id){
+    protected void setID(int id){
         if (id > 0){
             this.ID = id;
-        }else {System.out.println("ID не может быть меньше нуля");}
-        }
-    public int getID(){ return this.ID; }
+        }else {System.out.println("ID РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ РЅСѓР»СЏ");}
+    }
+    protected int getID(){ return this.ID; }
 
-    public void setGender(String gender){this.Gender = gender;}
-    public String getGender(){return this.Gender;}
+    protected void setGender(String gender){this.Gender = gender;}
+    protected String getGender(){return this.Gender;}
 
-    public void setBookYear(String bookyear){this.BookYear = bookyear;}
-    public String getBookYear(){return this.BookYear;}
+    protected void setBookYear(String bookyear){this.BookYear = bookyear;}
+    protected String getBookYear(){return this.BookYear;}
 
-    public void setBookeName(String bookename){this.BookeName = bookename;}
-    public String getBookeName(){return this.BookeName;}
+    protected void setBookeName(String bookename){this.BookeName = bookename;}
+    protected String getBookeName(){return this.BookeName;}
 
-    public void setBookAuthor(String bookauthor){this.BookAuthor = bookauthor;}
-    public String getBookAuthor(){return this.BookAuthor;}
+    protected void setBookAuthor(String bookauthor){this.BookAuthor = bookauthor;}
+    protected String getBookAuthor(){return this.BookAuthor;}
+
 }
+

@@ -5,10 +5,10 @@ public class User extends People{
         super.setSurname(surname);
         super.setAge(age);
     }
-
-    public static void main (String[] args){
-        User user = new User("Артём", "Лопатин", 25);
+    void request(){
 
     }
+
+
 
 }

@@ -4,17 +4,19 @@ public class People {
     private String Surname;
     private int Age;
 
-    public void setName(String name){ this.Name = name; }
-    public String getName(){ return this.Name; }
+    protected void setName(String name){ this.Name = name; }
+    protected String getName(){ return this.Name; }
 
-    public void setSurname(String surname){ this.Surname = surname; }
-    public String getSurname(){ return this.Surname; }
+    protected void setSurname(String surname){ this.Surname = surname; }
+    protected String getSurname(){ return this.Surname; }
 
-    public void setAge(int age){
+    protected void setAge(int age){
         if (age > 0){
             this.Age = age;
-        }else {System.out.println("Значение возраста не может быть меньше нуля");}
+        }else {
+            System.out.println("Р—РЅР°С‡РµРЅРёРµ РІРѕР·СЂР°СЃС‚Р° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ РЅСѓР»СЏ");
         }
-    public int getAge(){ return this.Age; }
+        }
+    protected int getAge(){ return this.Age; }
 
 }

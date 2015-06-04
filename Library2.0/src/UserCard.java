@@ -8,7 +8,7 @@ public class UserCard {
     public void setIDCard (int idcard) {
         if (idcard > 0){
             this.IDCard = idcard;
-        }else {System.out.println("ID не может быть меньше нуля");}
+        }else {System.out.println("ID РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ РЅСѓР»СЏ");}
     }
 
     public void setNameCard(String namecard){this.NameCard = namecard;}
@@ -21,7 +21,7 @@ public class UserCard {
         if (agecard > 0) {
             this.AgeCard = agecard;
         }else {
-            System.out.println ("Возраст не может быть меньше нуля");}
+            System.out.println ("Р’РѕР·СЂР°СЃС‚ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ РЅСѓР»СЏ");}
 
     }
     public int getAgeCard(){return this.AgeCard;}
