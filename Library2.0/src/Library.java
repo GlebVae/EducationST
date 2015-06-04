@@ -1,8 +1,7 @@
 public class Library {
 
     public void bookList(){
-        Book[] booklist;
-        booklist = new Book[1];
+        Book[] booklist = new Book[2];
         booklist[0] = new Book();
         booklist[0].setID(1);
         booklist[0].setBookAuthor("Лермонтов");
@@ -11,8 +10,7 @@ public class Library {
         booklist[0].setBookYear("1840");
     }
     public void userCard(int idcard, String namecard, String surnamecard, int agecard ){
-        UserCard[] usercard;
-        usercard = new UserCard[1];
+        UserCard[] usercard = new UserCard[2];
         usercard [0] = new UserCard();
         usercard[0].setIDCard(1);
         usercard[0].setNameCard("Артём");
