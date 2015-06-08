@@ -1,13 +1,13 @@
 public class User extends People {
     private int id;
+    private boolean delay = false;
+    private boolean noobie = false;
 
-    public User(int id, String name, String surname, int age) {
+    public User(String name, String surname, int age, int id, boolean delay, boolean noobie) {
         super(name, surname, age);
         this.id = id;
-    }
-
-    public User(String name, String surname, int age) {
-        super(name, surname, age);
+        this.delay = delay;
+        this.noobie = noobie;
     }
 
     public int getId() {
@@ -18,7 +18,19 @@ public class User extends People {
         this.id = id;
     }
 
-    public void takeBook(){
+    public boolean isDelay() {
+        return delay;
+    }
 
+    public void setDelay(boolean delay) {
+        this.delay = delay;
+    }
+
+    public boolean isNoobie() {
+        return noobie;
+    }
+
+    public void setNoobie(boolean noobie) {
+        this.noobie = noobie;
     }
 }

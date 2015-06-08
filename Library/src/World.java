@@ -8,6 +8,5 @@ public class World {
         Librarian librarian = new Librarian("Зинаида", "Петровна", 45, "first");
 
 
-
     }
 }

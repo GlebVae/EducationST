@@ -14,5 +14,13 @@ public class Librarian extends People {
         this.permitions = permitions;
     }
 
+    public String giveBook(){
+        return null;
+    }
 
+    public boolean findBook(){
+
+
+        return Boolean.parseBoolean(null);
+    }
 }

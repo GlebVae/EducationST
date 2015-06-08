@@ -33,8 +33,14 @@ public class Book {
         this.authorBook = authorBook;
     }
 
+
     public int giveBook(){
-        System.out.println("Я отдаю вот эту книгу");
-        return this.idBook;
+        if(idBook == 1 ){
+            System.out.println("я отдам вам " + this.idBook + " ");
+
+        }else {
+            System.out.println("такой книги нет");
+        }
+        return idBook;
     }
 }
