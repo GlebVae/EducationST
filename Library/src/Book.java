@@ -34,13 +34,4 @@ public class Book {
     }
 
 
-    public int giveBook(){
-        if(idBook == 1 ){
-            System.out.println("я отдам вам " + this.idBook + " ");
-
-        }else {
-            System.out.println("такой книги нет");
-        }
-        return idBook;
-    }
 }
