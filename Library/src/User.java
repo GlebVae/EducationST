@@ -9,6 +9,7 @@ public class User extends People {
     public User(String name, String surname, int age) {
         super(name, surname, age);
     }
+
     public int getId() {
         return id;
     }
@@ -16,4 +17,6 @@ public class User extends People {
     public void setId(int id) {
         this.id = id;
     }
+
+
 }

@@ -1,35 +1,40 @@
 public class Book {
-    private int id;
-    private String name;
-    private String author;
+    private int idBook;
+    private String nameBook;
+    private String authorBook;
 
-    public Book(int id, String name, String author) {
-        this.id = id;
-        this.name = name;
-        this.author = author;
+    public Book(int idBook, String nameBook, String authorBook) {
+        this.idBook = idBook;
+        this.nameBook = nameBook;
+        this.authorBook = authorBook;
     }
 
-    public int getId() {
-        return id;
+    public int getIdBook() {
+        return idBook;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdBook(int idBook) {
+        this.idBook = idBook;
     }
 
-    public String getName() {
-        return name;
+    public String getNameBook() {
+        return nameBook;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameBook(String nameBook) {
+        this.nameBook = nameBook;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getAuthorBook() {
+        return authorBook;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthorBook(String authorBook) {
+        this.authorBook = authorBook;
+    }
+
+    public int getBook(){
+        System.out.println("Я отдам эту книгу");
+        return this.idBook;
     }
 }
