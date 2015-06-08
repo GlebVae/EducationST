@@ -14,12 +14,16 @@ public class Librarian extends People {
         this.permitions = permitions;
     }
 
-    public String giveBook(){
+    public String giveBook(String name){
         return null;
     }
 
     public boolean findBook(){
+        Library library = new Library("Zorka", "7");
+        Book books;
+        for (int i = 0; i < 5; i++){
 
+        }
 
         return Boolean.parseBoolean(null);
     }
