@@ -18,5 +18,7 @@ public class User extends People {
         this.id = id;
     }
 
+    public void takeBook(){
 
+    }
 }
