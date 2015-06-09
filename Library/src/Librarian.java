@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 public class Librarian extends People {
     private String permitions;
-    private Librarian librarian;
+    Library library;
+    Book book;
 
     public  Librarian(String name, String surname, int age, String permitions) {
         super(name, surname, age);
@@ -17,15 +18,15 @@ public class Librarian extends People {
         this.permitions = permitions;
     }
 
-    public boolean findBook(String name){
 
-        for (int i = 0; i < 5; i++) {
-            
-        }
-
+    public boolean findBook() {
+        Book[]books = library.getBooks();
+        for (int i = 0; i < books.length; i++) {
+    }
         return true;
+    }
 
-    }}
+}
 
 
 
