@@ -32,4 +32,9 @@ public class Book {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
+
+    @Override
+    public String toString() {
+        return "Book[ID: " + idBook + ",  bookname: " + nameBook + ", authorbook: " + authorName + "]";
+    }
 }

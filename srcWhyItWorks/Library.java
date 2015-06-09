@@ -9,7 +9,7 @@ public class Library {
         this.numberOfRooms = numberOfRooms;
 
         books = new Book[5];
-        books[0]= new Book(1,"Герои нашего времени","Лермонтов");
+        books[0]= new Book(1,"Р“РµСЂРѕРё РЅР°С€РµРіРѕ РІСЂРµРјРµРЅРё","Р›РµСЂРјРѕРЅС‚РѕРІ");
     }
 
     public String getName() {
