@@ -1,5 +1,6 @@
 public class Librarian extends People {
     private String permitions;
+    // Бибилотекарь работает в определенной библиотеке
     private Library library;
 
 
@@ -7,11 +8,14 @@ public class Librarian extends People {
         super(name, surname, age);
         this.permitions = permitions;
     }
-
-    public Library getLibrary(){
+    // Спросить в какой библиотеке ты работаешь
+    public Library getLibrary() {
         return library;
     }
-
+    // Указать в какой библиотеке будешь работать
+    public void setLibrary(Library library) {
+        this.library = library;
+    }
 
     public String getPermitions() {
         return permitions;
