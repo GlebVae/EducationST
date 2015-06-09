@@ -6,12 +6,10 @@ public class World {
         Library library = new Library("Zorka", "7");
         Librarian librarian = new Librarian("Zinaida", "Petrovna", 45,"First");
 
-        boolean book = librarian.findBook();{
-        if (){
-
-        }else
+        librarian.findBook();
+        }
             
 
 
     }
-}
+

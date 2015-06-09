@@ -1,14 +1,17 @@
-import java.util.ArrayList;
-
 public class Librarian extends People {
     private String permitions;
-    Library library;
-    Book book;
+    private Library library;
 
-    public  Librarian(String name, String surname, int age, String permitions) {
+
+    public Librarian(String name, String surname, int age, String permitions) {
         super(name, surname, age);
         this.permitions = permitions;
     }
+
+    public Library getLibrary(){
+        return library;
+    }
+
 
     public String getPermitions() {
         return permitions;
@@ -22,6 +25,8 @@ public class Librarian extends People {
     public boolean findBook() {
         Book[]books = library.getBooks();
         for (int i = 0; i < books.length; i++) {
+            System.out.println(books[i]);
+
     }
         return true;
     }

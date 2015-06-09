@@ -16,6 +16,7 @@ public class Library {
         usercards = new UserCard[5];
         usercards[0] = new UserCard("Artem","Lebedev", 25, "Kosmos 3-1-2", "222-555-678", 1);
 
+
     }
 
     public String getName() {
@@ -48,6 +49,10 @@ public class Library {
 
     public void setUsercards(UserCard[] usercards) {
         this.usercards = usercards;
+    }
+
+    void addLibrarian(Librarian librarian){
+        librarian.setName(name);
     }
 
 

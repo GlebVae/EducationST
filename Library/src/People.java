@@ -3,33 +3,33 @@ public class People {
     private String surname;
     private int age;
 
-    public People(String name, String surname, int age) {
+    protected People(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    public String getSurname() {
+    protected String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
+    protected void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public int getAge() {
+    protected int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    private void setAge(int age) {
         this.age = age;
     }
 
