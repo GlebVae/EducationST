@@ -3,9 +3,18 @@ public class Library {
     private String numberOfRooms;
     private Book[] books;
     private UserCard[] usercards;
+
     // В библиотеке работает определенный библиотекарь
     private Librarian librarian;
 
+    // Узнаем какой библиотекарь работает в библиотеке
+    public Librarian getLibrarian() {
+        return librarian;
+    }
+    // Устраиваем на работу в определённую библиотеку
+    public void setLibrarian(Librarian librarian) {
+        this.librarian = librarian;
+    }
 
     public Library(String name, String numberOfRooms) {
         this.name = name;
@@ -53,13 +62,6 @@ public class Library {
         this.usercards = usercards;
     }
 
-    // Узнаем какой библиотекарь работает в библиотеке
-    public Librarian getLibrarian() {
-        return librarian;
-    }
-    // Устраиваем на работу в определённую библиотеку
-    public void setLibrarian(Librarian librarian) {
-        this.librarian = librarian;
-    }
+
 }
 

@@ -26,7 +26,7 @@ public class Librarian extends People {
     }
 
 
-    public boolean findBook() {
+   public boolean findBook() {
         Book[]books = library.getBooks();
         for (int i = 0; i < books.length; i++) {
             System.out.println(books[i]);
@@ -34,7 +34,9 @@ public class Librarian extends People {
     }
         return true;
     }
-
+    public void sayHello(){
+        System.out.println("heloeleoeleo");
+    }
 }
 
 
