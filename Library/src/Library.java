@@ -1,15 +1,21 @@
+import java.util.ArrayList;
+
 public class Library {
     private String name;
     private int numberOfRooms;
     private Librarian librarian;
-    private Book[] books;
+    private ArrayList<Book> books = new ArrayList<Book>();
 
     public Library(String name, int numberOfRooms) {
         this.name = name;
         this.numberOfRooms = numberOfRooms;
 
-        books = new Book[5];
-        books[0]= new Book(1,"Герои нашего времени","Лермонтов");
+        Book one = new Book(1, "Герои нашего времени", "Лермонтов");
+        books.add(one);
+        Book two = new Book(2, "Гарри Поттер и филосовский камень", "Роулинг");
+        books.add(two);
+        Book three = new Book (3, "Меч Предназначения", "Сапковский");
+        books.add(three);
     }
 
     public String getName() {
@@ -36,11 +42,13 @@ public class Library {
         this.librarian = librarian;
     }
 
-    public Book[] getBooks() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 
-    public void setBooks(Book[] books) {
+    public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
 }
+
+

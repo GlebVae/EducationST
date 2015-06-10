@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Librarian extends People {
 
     private String permitions;
@@ -24,14 +26,14 @@ public class Librarian extends People {
         this.library = library;
     }
 
-    public void sayHello(){
-        System.out.println("heheeleleo");
-    }
+//    public void sayHello(){
+//        System.out.println("heheeleleo");
+//    }
 
     public boolean findBook(int idBook){
-        Book[] books = library.getBooks();
-        for (int i = 0; i < books.length; i++){
-            System.out.println(books[i]);
+        ArrayList<Book> books = library.getBooks();
+        for (int i = 0; i < books.size(); i++){
+            System.out.println(books.get(i));
         }
         return true;
     }
