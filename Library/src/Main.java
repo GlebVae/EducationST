@@ -17,6 +17,10 @@ public class Main {
         if (sc.hasNext("yes")){
             System.out.println("Печально, но это всё, что у нас есть:");
             librarianZin.findBook(1);
+        }
+        if (sc.hasNext("Yes")){
+            System.out.println("Печально, но это всё, что у нас есть:");
+            librarianZin.findBook(1);
         }else {
             System.out.println("Зря-зря");
         }
