@@ -1,6 +1,6 @@
-package Users;
-import Library.Library;
-import Library.Book;
+package com.softteco.users;
+import com.softteco.library.Library;
+import com.softteco.library.Book;
 import java.util.ArrayList;
 
 
@@ -8,6 +8,7 @@ public class Librarian extends People {
 
     private String permitions;
     private Library library;
+    private Book book;
 
     public Librarian(String name, String surname, int age, String permitions) {
         super(name, surname, age);
@@ -30,26 +31,32 @@ public class Librarian extends People {
         this.library = library;
     }
 
-//    public void sayHello(){
+    public Book getBook() {
+        return book;
+    }
+    //    public void sayHello(){
 //        System.out.println("heheeleleo");
 //    }
 
-    public boolean findBook(int idBook){
+    public boolean findAllBooks(int idBook) {
         ArrayList<Book> books = library.getBooks();
-        for (int i = 0; i < books.size(); i++){
+        for (int i = 0; i < books.size(); i++) {
             System.out.println(books.get(i));
         }
         return true;
     }
 
-//    public int searchIDBook(int id){
-//        ArrayList<Book> books = library.getBooks();
-//        for (int i = 0; i < books.size(); i++) {
-//            if (id.equals(1)) {
-//                System.out.println("Книга выдана!Читай не перечитай!");
-//                break;
-//            }
-//        }
-//        return id;
+    public void searchIDBook() {
+        ArrayList<Book> books = library.getBooks();
+        int idBook = 0;
+        for (int i = 0; i < books.size(); i++) {
+            if (books.contains(idBook))
+            books.get(idBook);
+            System.out.println("Мы нашли Вашу книгу " + books.get(idBook));
+                break;
+            }
+        }
+
     }
+
 

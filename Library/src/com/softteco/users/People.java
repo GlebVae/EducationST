@@ -1,4 +1,4 @@
-package Users;
+package com.softteco.users;
 
 public abstract class People {
     private String name;

@@ -1,12 +1,23 @@
-package Library;
+package com.softteco.library;
 import java.util.ArrayList;
-import Users.Librarian;
+import com.softteco.users.Librarian;
+import com.softteco.users.User;
 
 
 public class Library {
     private String name;
     private int numberOfRooms;
     private Librarian librarian;
+    private User userOne;
+
+    public User getUserOne() {
+        return userOne;
+    }
+
+    public void setUserOne(User userOne) {
+        this.userOne = userOne;
+    }
+
     private ArrayList<Book> books = new ArrayList<Book>();
 
     public Library(String name, int numberOfRooms) {

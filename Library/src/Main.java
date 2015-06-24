@@ -1,5 +1,6 @@
-import Library.Library;
-import Users.Librarian;
+import com.softteco.library.Library;
+import com.softteco.users.Librarian;
+import com.softteco.users.User;
 
 import java.util.Scanner;
 
@@ -8,11 +9,14 @@ public class Main {
     public static void main(String[] args){
 
         System.out.println("Добро пожаловать в библиотеку Libra!");
+        User userOne = new User (1, "Artem", "Lopatin", 25);
         Library libraryZor = new Library("Zorka", 7);
         Librarian librarianZin = new Librarian("Zinaida", "Petrovna", 45,"First");
 
         librarianZin.setLibrary(libraryZor);
         libraryZor.setLibrarian(librarianZin);
+        userOne.setLibrary(libraryZor);
+        libraryZor.setUserOne(userOne);
 
 //        librarianZin.sayHello();
 
@@ -20,7 +24,7 @@ public class Main {
         System.out.println("Показать все книги в библиотеке?(yes/no): ");
         if (sc.hasNext("yes")){
             System.out.println("Печально, но это всё, что у нас есть:");
-            librarianZin.findBook(1);
+            librarianZin.findAllBooks(1);
 
             sc.nextLine();
             System.out.println(" ");
@@ -29,7 +33,7 @@ public class Main {
                 sc.nextLine();
                 System.out.println("Укажите ID книги: ");
                 if (sc.hasNext("1")){
-//                    librarianZin.searchIDBook(1);
+                    librarianZin.searchIDBook();
                 }
 
             }else {

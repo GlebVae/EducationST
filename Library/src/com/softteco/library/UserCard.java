@@ -1,5 +1,5 @@
-package Library;
-import Users.People;
+package com.softteco.library;
+import com.softteco.users.People;
 
 public class UserCard extends People {
     private String address;
