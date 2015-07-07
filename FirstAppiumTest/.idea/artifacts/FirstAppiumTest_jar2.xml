@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FirstAppiumTest:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/FirstAppiumTest_jar2</output-path>
+    <root id="archive" name="FirstAppiumTest.jar">
+      <element id="module-output" name="FirstAppiumTest" />
+      <element id="extracted-dir" path="D:/Programs/Java/Libs extra/java-client-3.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Programs/Java/Libs extra/selenium-server-standalone-2.46.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
