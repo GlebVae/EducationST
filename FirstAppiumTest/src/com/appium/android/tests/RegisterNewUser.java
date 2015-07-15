@@ -5,21 +5,11 @@ import io.appium.java_client.android.AndroidElement;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.*;
-import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.logging.Logger;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import javax.swing.*;
 
 // унаследовал от класса родителя, описывающий драйвер
 public class RegisterNewUser extends SetupInfo {
@@ -36,12 +26,13 @@ public class RegisterNewUser extends SetupInfo {
 
         //нашли поля ввода данных и ввели их
 
-        List<AndroidElement> textFieldsList = driver.findElementsByClassName("android.widget.EditText");
-        textFieldsList.get(0).sendKeys("gerald@izrivii.com");
-        printInfo("Entered email: " + textFieldsList.get(0).getText());
-        textFieldsList.get(1).sendKeys("Ciri  Rivia");
-        printInfo("Entered username: " + textFieldsList.get(1).getText());
-        textFieldsList.get(2).sendKeys("12345678adb");
+        loginFast4Fields("android.widget.EditText","gerald@izrivii.com","Ciri  Rivia","12345678adb");
+//        List<AndroidElement> textFieldsList = driver.findElementsByClassName("android.widget.EditText");
+//        textFieldsList.get(0).sendKeys("gerald@izrivii.com");
+//        printInfo("Entered email: " + textFieldsList.get(0).getText());
+//        textFieldsList.get(1).sendKeys("Ciri  Rivia");
+//        printInfo("Entered username: " + textFieldsList.get(1).getText());
+//        textFieldsList.get(2).sendKeys("12345678adb");
         takeScreenshot("Login");
 
         //нашли кнопку подтверждения регистрации
@@ -76,10 +67,14 @@ public class RegisterNewUser extends SetupInfo {
         WebElement login = driver.findElement(By.name("LOG IN"));
         printInfo("just clicked element with loc: " + login.getLocation() + " and name: " + login.getText());
         login.click();
-        List<AndroidElement> textFiledList = driver.findElementsByClassName("android.widget.EditText");
-        textFieldsList.get(0).sendKeys("gerald@izrivii.com");
-        printInfo("Entered email: " + textFieldsList.get(0).getText());
-        textFieldsList.get(1).sendKeys("12345678adb");
+
+        loginFast2Fields("android.widget.EditText", "gerald@izrivii.com","12345678adb" );
+
+//        List<AndroidElement> textFiledList = driver.findElementsByClassName("android.widget.EditText");
+//        textFieldsList.get(0).sendKeys("gerald@izrivii.com");
+//        printInfo("Entered email: " + textFieldsList.get(0).getText());
+//        textFieldsList.get(1).sendKeys("12345678adb");
+
         takeScreenshot("ChekingNewUserData");
         printInfo("just clicked element with loc: " + login.getLocation() + "and name: " + login.getText());
         driver.findElementByName("LOG IN").click();
